@@ -6,7 +6,7 @@ import FormGroup from '@mui/material/FormGroup';
 interface IFormInput {
     id: string,
     label: string,
-    onChange: any,
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
     value?: string | number,
     type?: string,
     multiline?: boolean,
